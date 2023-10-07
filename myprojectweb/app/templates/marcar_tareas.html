@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marcar Tarea</title>
+</head>
+<body>
+    <a href="/">Regresar al índice</a>
+    <h1>Marcar Tarea</h1>
+    <form action="/marcar_tareas" method="post">
+        <label for="descripcion">Descripción de la Tarea:</label>
+        <input type="text" id="descripcion" name="descripcion" required>
+        <label for="estado">¿Está completada?</label>
+        <input type="checkbox" id="estado" name="estado" value="true">
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>

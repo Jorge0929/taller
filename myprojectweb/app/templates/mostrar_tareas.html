@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <a href="/">regresar al indice</a>
+    <h1>Lista de Tareas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Descripción</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se imprimirán las filas de la base de datos -->
+            {% for tarea in Tareas %}
+            <tr>
+                <td>{{ tarea.Id }}</td>
+                <td>{{ tarea.descripcion }}</td>
+                <td>{{ tarea.estado }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+
